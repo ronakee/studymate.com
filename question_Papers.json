@@ -1,0 +1,9 @@
+[
+ {
+  "course" : "B.B.A",
+  "sem": {
+   "1" : ["Bascis Of Accounting", "Business Communications", "Business Environment", "Creativity and Innovation"],
+   "2" : ["Businness Law", "Financial Services", "Fundamentals Of Accounting", "Principles Of Business Management", "Principles Of Economics"]
+  }
+ }
+]
