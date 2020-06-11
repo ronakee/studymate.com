@@ -1,27 +1,27 @@
 [
  {
   "id":"1",
-  "name":"USA",
+  "name":"B.A",
   "parent_id":"0"
  }, 
  {
   "id":"2",
-  "name":"Canada",
+  "name":"B.Arch",
   "parent_id":"0"
  }, 
  {
   "id":"3",
-  "name":"Australia",
+  "name":"B.C.A",
   "parent_id":"0"
  }, 
  {
   "id":"4",
-  "name":"New York",
-  "parent_id":"1"
+  "name":"B.Com",
+  "parent_id":"0"
  }, 
  {
   "id":"5",
-  "name":"Alabama",
+  "name":"B.E",
   "parent_id":"1"
  }, 
  {
@@ -135,4 +135,3 @@
   "parent_id":"10"
  }
 ]
-
