@@ -247,24 +247,88 @@
  },
 {
   "id":"50",
-  "name":"1",
+  "name":"Sem-1",
   "parent_id":"1"
  },
 {
   "id":"51",
-  "name":"2",
+  "name":"Sem-2",
   "parent_id":"1"
  },
  {
   "id":"52",
-  "name":"3",
-  "parent_id":"1",
-  "parent_id":"2"
+  "name":"Sem-3",
+  "parent_id":"1"
  },
  {
   "id":"53",
-  "name":"4",
+  "name":"Sem-4",
   "parent_id":"1"
- }
+ },
+{
+  "id":"54",
+  "name":"Part-1",
+  "parent_id":"1"
+ },
+ {
+  "id":"55",
+  "name":"Part-2",
+  "parent_id":"1"
+ },
+ {
+  "id":"56",
+  "name":"Part-3",
+  "parent_id":"1"
+ },
+ {
+  "id":"57",
+  "name":"Sem-1",
+  "parent_id":"2"
+ },
+{
+  "id":"58",
+  "name":"Sem-2",
+  "parent_id":"2"
+ },
+ {
+  "id":"59",
+  "name":"Sem-3",
+  "parent_id":"2"
+ },
+ {
+  "id":"60",
+  "name":"Sem-4",
+  "parent_id":"2"
+ },
+ {
+  "id":"61",
+  "name":"Sem-5",
+  "parent_id":"2"
+ }, 
+ {
+  "id":"62",
+  "name":"Sem-6",
+  "parent_id":"2"
+ },
+ {
+  "id":"63",
+  "name":"Sem-7",
+  "parent_id":"2"
+ },
+ {
+  "id":"64",
+  "name":"Sem-8",
+  "parent_id":"2"
+ },
+ {
+  "id":"65",
+  "name":"Sem-9",
+  "parent_id":"2"
+ },
+ {
+  "id":"66",
+  "name":"Sem-10",
+  "parent_id":"2"
+ },
 ]
  
