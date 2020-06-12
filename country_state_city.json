@@ -95,115 +95,115 @@
   "parent_id":"0"
  },
  {
-  "id":"27",
+  "id":"19",
   "name":"Civil Engineering",
   "parent_id":"0"
  },
  {
-  "id":"27",
+  "id":"20",
   "name":"Computer Science Engineering",
   "parent_id":"0"
  }, 
  {
-  "id":"19",
+  "id":"21",
   "name":"Diploma",
   "parent_id":"0"
  }, 
  {
-  "id":"20",
+  "id":"22",
   "name":"D.Pharm",
   "parent_id":"0"
  },
  {
-  "id":"27",
+  "id":"23",
   "name":"Electrical/Electroincs-n-Power",
   "parent_id":"0"
  },
  {
-  "id":"27",
+  "id":"24",
   "name":"",
   "parent_id":"0"
  }, 
  {
-  "id":"21",
+  "id":"25",
   "name":"L.L.B/3 year",
   "parent_id":"0"
  }, 
  {
-  "id":"22",
+  "id":"26",
   "name":"L.L.B/5 year",
   "parent_id":"0"
  }, 
  {
-  "id":"23",
+  "id":"27",
   "name":"L.L.M",
   "parent_id":"0"
  }, 
  {
-  "id":"24",
+  "id":"28",
   "name":"M.A",
   "parent_id":"0"
  }, 
  {
-  "id":"25",
+  "id":"29",
   "name":"M.B.A",
   "parent_id":"0"
  }, 
  {
-  "id":"26",
+  "id":"30",
   "name":"M.C.A-PGDCS",
   "parent_id":"0"
  }, 
  {
-  "id":"27",
+  "id":"31",
   "name":"M.Com",
   "parent_id":"0"
  },
  {
-  "id":"28",
+  "id":"32",
   "name":"M.E",
   "parent_id":"0"
  },
  {
-  "id":"29",
+  "id":"33",
   "name":"M.H.R.D",
   "parent_id":"0"
  },
  {
-  "id":"30",
+  "id":"34",
   "name":"M.Lib",
   "parent_id":"0"
  },
  {
-  "id":"31",
+  "id":"35",
   "name":"M.P.Ed",
   "parent_id":"0"
  },
  {
-  "id":"32",
+  "id":"36",
   "name":"M.Pharm",
   "parent_id":"0"
  },
  {
-  "id":"33",
+  "id":"37",
   "name":"M.Phil",
   "parent_id":"0"
  },
  {
-  "id":"34",
+  "id":"38",
   "name":"M.S.C",
   "parent_id":"0"
  },{
-  "id":"35",
+  "id":"39",
   "name":"M.Tech",
   "parent_id":"0"
  },{
-  "id":"36",
+  "id":"40",
   "name":"P.G(Diploma)",
   "parent_id":"0"
  },
  {
-  "id":"37",
+  "id":"41",
   "name":"1",
   "parent_id":"1",
   "parent_id":"2",
@@ -229,17 +229,17 @@
   "parent_id":"22"
  },
  {
-  "id":"38",
+  "id":"42",
   "name":"2",
   "parent_id":"0"
  },
  {
-  "id":"39",
+  "id":"43",
   "name":"3",
   "parent_id":"0"
  },
  {
-  "id":"40",
+  "id":"44",
   "name":"3",
   "parent_id":"0"
  }
