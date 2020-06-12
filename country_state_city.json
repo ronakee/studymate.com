@@ -205,21 +205,21 @@
  {
   "id":"41",
   "name":"1",
-  "parent_id":["1", "2"]
+  "parent_id":"1"
  },
  {
   "id":"42",
   "name":"2",
-  "parent_id":"0"
+  "parent_id":"1"
  },
  {
   "id":"43",
   "name":"3",
-  "parent_id":"0"
+  "parent_id":"1"
  },
  {
   "id":"44",
   "name":"3",
-  "parent_id":"0"
+  "parent_id":"1"
  }
 ]
