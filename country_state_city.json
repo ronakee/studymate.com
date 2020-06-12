@@ -22,116 +22,225 @@
  {
   "id":"5",
   "name":"B.E",
-  "parent_id":"1"
+  "parent_id":"0"
  }, 
  {
   "id":"6",
-  "name":"California",
-  "parent_id":"1"
+  "name":"B.Ed",
+  "parent_id":"0"
  }, 
  {
   "id":"7",
-  "name":"Ontario",
-  "parent_id":"2"
+  "name":"B.F.D",
+  "parent_id":"0"
  }, 
  {
   "id":"8",
-  "name":"British Columbia",
-  "parent_id":"2"
- }, 
+  "name":"B.J.M.C",
+  "parent_id":"0"
+ },
  {
   "id":"9",
-  "name":"New South Wales",
-  "parent_id":"3"
+  "name":"Biomedical Engineering",
+  "parent_id":"0"
  }, 
  {
   "id":"10",
-  "name":"Queensland",
-  "parent_id":"3"
+  "name":"B.Lib",
+  "parent_id":"0"
  }, 
  {
   "id":"11",
-  "name":"New York city",
-  "parent_id":"4"
+  "name":"B.P.A",
+  "parent_id":"0"
+ }, 
+ {
+  "id":"11",
+  "name":"B.P.E-n-S",
+  "parent_id":"0"
  }, 
  {
   "id":"12",
-  "name":"Buffalo",
-  "parent_id":"4"
+  "name":"B.P.Ed",
+  "parent_id":"0"
  }, 
  {
   "id":"13",
-  "name":"Albany",
-  "parent_id":"4"
+  "name":"B.Pharm",
+  "parent_id":"0"
  }, 
  {
   "id":"14",
-  "name":"Birmingham",
-  "parent_id":"5"
+  "name":"B.Sc",
+  "parent_id":"0"
  }, 
  {
   "id":"15",
-  "name":"Montgomery",
-  "parent_id":["5","4"]
+  "name":"B.S.W",
+  "parent_id":"0"
  }, 
  {
   "id":"16",
-  "name":"Huntsville",
-  "parent_id":"5"
+  "name":"B.Tech",
+  "parent_id":"0"
  }, 
  {
   "id":"17",
-  "name":"Los Angeles",
-  "parent_id":"6"
+  "name":"B.Text",
+  "parent_id":"0"
  }, 
  {
   "id":"18",
-  "name":"San Francisco",
-  "parent_id":"6"
+  "name":"B.Voc",
+  "parent_id":"0"
+ },
+ {
+  "id":"27",
+  "name":"Civil Engineering",
+  "parent_id":"0"
+ },
+ {
+  "id":"27",
+  "name":"Computer Science Engineering",
+  "parent_id":"0"
  }, 
  {
   "id":"19",
-  "name":"San Diego",
-  "parent_id":"6"
+  "name":"Diploma",
+  "parent_id":"0"
  }, 
  {
   "id":"20",
-  "name":"Toronto",
-  "parent_id":"7"
+  "name":"D.Pharm",
+  "parent_id":"0"
+ },
+ {
+  "id":"27",
+  "name":"Electrical/Electroincs-n-Power",
+  "parent_id":"0"
+ },
+ {
+  "id":"27",
+  "name":"",
+  "parent_id":"0"
  }, 
  {
   "id":"21",
-  "name":"Ottawa",
-  "parent_id":"7"
+  "name":"L.L.B/3 year",
+  "parent_id":"0"
  }, 
  {
   "id":"22",
-  "name":"Vancouver",
-  "parent_id":"8"
+  "name":"L.L.B/5 year",
+  "parent_id":"0"
  }, 
  {
   "id":"23",
-  "name":"Victoria",
-  "parent_id":"8"
+  "name":"L.L.M",
+  "parent_id":"0"
  }, 
  {
   "id":"24",
-  "name":"Sydney",
-  "parent_id":"9"
+  "name":"M.A",
+  "parent_id":"0"
  }, 
  {
   "id":"25",
-  "name":"Newcastle",
-  "parent_id":"9"
+  "name":"M.B.A",
+  "parent_id":"0"
  }, 
  {
   "id":"26",
-  "name":"City of Brisbane",
-  "parent_id":"10"
+  "name":"M.C.A-PGDCS",
+  "parent_id":"0"
  }, 
  {
   "id":"27",
-  "name":"Gold Coast",
-  "parent_id":"10"
+  "name":"M.Com",
+  "parent_id":"0"
+ },
+ {
+  "id":"28",
+  "name":"M.E",
+  "parent_id":"0"
+ },
+ {
+  "id":"29",
+  "name":"M.H.R.D",
+  "parent_id":"0"
+ },
+ {
+  "id":"30",
+  "name":"M.Lib",
+  "parent_id":"0"
+ },
+ {
+  "id":"31",
+  "name":"M.P.Ed",
+  "parent_id":"0"
+ },
+ {
+  "id":"32",
+  "name":"M.Pharm",
+  "parent_id":"0"
+ },
+ {
+  "id":"33",
+  "name":"M.Phil",
+  "parent_id":"0"
+ },
+ {
+  "id":"34",
+  "name":"M.S.C",
+  "parent_id":"0"
+ },{
+  "id":"35",
+  "name":"M.Tech",
+  "parent_id":"0"
+ },{
+  "id":"36",
+  "name":"P.G(Diploma)",
+  "parent_id":"0"
+ },
+ {
+  "id":"37",
+  "name":"1",
+  "parent_id":"1",
+  "parent_id":"2",
+  "parent_id":"3",
+  "parent_id":"4",
+  "parent_id":"5",
+  "parent_id":"6",
+  "parent_id":"7",
+  "parent_id":"8",
+  "parent_id":"9",
+  "parent_id":"10",
+  "parent_id":"11",
+  "parent_id":"12",
+  "parent_id":"13",
+  "parent_id":"14",
+  "parent_id":"15",
+  "parent_id":"16",
+  "parent_id":"17",
+  "parent_id":"18",
+  "parent_id":"19",
+  "parent_id":"20",
+  "parent_id":"21",
+  "parent_id":"22",
+ },
+ {
+  "id":"38",
+  "name":"2",
+  "parent_id":"0"
+ },
+ {
+  "id":"39",
+  "name":"3",
+  "parent_id":"0"
+ },
+ {
+  "id":"40",
+  "name":"3",
+  "parent_id":"0"
  }
 ]
