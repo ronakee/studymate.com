@@ -55,171 +55,215 @@
   "parent_id":"0"
  }, 
  {
-  "id":"11",
+  "id":"12",
   "name":"B.P.E-n-S",
   "parent_id":"0"
  }, 
  {
-  "id":"12",
+  "id":"13",
   "name":"B.P.Ed",
   "parent_id":"0"
  }, 
  {
-  "id":"13",
+  "id":"14",
   "name":"B.Pharm",
   "parent_id":"0"
  }, 
  {
-  "id":"14",
+  "id":"15",
   "name":"B.Sc",
   "parent_id":"0"
  }, 
  {
-  "id":"15",
+  "id":"16",
   "name":"B.S.W",
   "parent_id":"0"
  }, 
  {
-  "id":"16",
+  "id":"17",
   "name":"B.Tech",
   "parent_id":"0"
  }, 
  {
-  "id":"17",
-  "name":"B.Text",
-  "parent_id":"0"
- }, 
- {
   "id":"18",
-  "name":"B.Voc",
+  "name":"B.Text",
   "parent_id":"0"
  },
  {
   "id":"19",
+  "name":"Business Management(Diploma)",
+  "parent_id":"0"
+ },
+ 
+ {
+  "id":"20",
+  "name":"B.Voc",
+  "parent_id":"0"
+ },
+ {
+  "id":"21",
   "name":"Civil Engineering",
   "parent_id":"0"
  },
  {
-  "id":"20",
+  "id":"22",
   "name":"Computer Science Engineering",
   "parent_id":"0"
  }, 
  {
-  "id":"21",
-  "name":"Diploma",
-  "parent_id":"0"
- }, 
- {
-  "id":"22",
+  "id":"23",
   "name":"D.Pharm",
   "parent_id":"0"
  },
  {
-  "id":"23",
+  "id":"24",
   "name":"Electrical/Electroincs-n-Power",
   "parent_id":"0"
  },
  {
-  "id":"24",
-  "name":"",
-  "parent_id":"0"
- }, 
- {
   "id":"25",
+  "name":"Electrical-n-Electronics Engg.",
+  "parent_id":"0"
+ },
+{
+  "id":"26",
+  "name":"Electronics Engg.",
+  "parent_id":"0"
+ },
+{
+  "id":"27",
+  "name":"Electronics/Telecommunication Enng.",
+  "parent_id":"0"
+ },
+ {
+  "id":"28",
+  "name":"Financial Management(Diploma)",
+  "parent_id":"0"
+ },
+{
+  "id":"29",
+  "name":"Information Technology",
+  "parent_id":"0"
+ },
+{
+  "id":"30",
+  "name":"Instrumentation Engg.",
+  "parent_id":"0"
+ },
+{
+  "id":"31",
   "name":"L.L.B/3 year",
   "parent_id":"0"
  }, 
  {
-  "id":"26",
+  "id":"32",
   "name":"L.L.B/5 year",
   "parent_id":"0"
  }, 
  {
-  "id":"27",
+  "id":"33",
   "name":"L.L.M",
   "parent_id":"0"
  }, 
  {
-  "id":"28",
+  "id":"34",
   "name":"M.A",
   "parent_id":"0"
  }, 
  {
-  "id":"29",
+  "id":"35",
   "name":"M.B.A",
   "parent_id":"0"
  }, 
  {
-  "id":"30",
+  "id":"36",
   "name":"M.C.A-PGDCS",
   "parent_id":"0"
  }, 
  {
-  "id":"31",
+  "id":"37",
   "name":"M.Com",
   "parent_id":"0"
  },
  {
-  "id":"32",
-  "name":"M.E",
+  "id":"38",
+  "name":"Mechanical Engg.",
   "parent_id":"0"
  },
  {
-  "id":"33",
+  "id":"39",
   "name":"M.H.R.D",
   "parent_id":"0"
  },
  {
-  "id":"34",
+  "id":"40",
   "name":"M.Lib",
   "parent_id":"0"
  },
  {
-  "id":"35",
+  "id":"41",
   "name":"M.P.Ed",
   "parent_id":"0"
  },
  {
-  "id":"36",
+  "id":"42",
   "name":"M.Pharm",
   "parent_id":"0"
  },
  {
-  "id":"37",
+  "id":"43",
   "name":"M.Phil",
   "parent_id":"0"
  },
  {
-  "id":"38",
+  "id":"44",
   "name":"M.S.C",
-  "parent_id":"0"
- },{
-  "id":"39",
-  "name":"M.Tech",
-  "parent_id":"0"
- },{
-  "id":"40",
-  "name":"P.G(Diploma)",
   "parent_id":"0"
  },
  {
-  "id":"41",
+  "id":"45",
+  "name":"M.Tech",
+  "parent_id":"0"
+ },
+ {
+  "id":"46",
+  "name":"Production Engg.",
+  "parent_id":"0"
+ },
+ {
+  "id":"47",
+  "name":"Taxation (Diploma)",
+  "parent_id":"0"
+ },
+{
+  "id":"48",
+  "name":"Yoga Education(Diploma)",
+  "parent_id":"0"
+ },
+{
+  "id":"49",
+  "name":"Yoga Therapy (Diploma)",
+  "parent_id":"0"
+ },
+{
+  "id":"50",
   "name":"1",
   "parent_id":"1"
  },
- {
-  "id":"42",
+{
+  "id":"51",
   "name":"2",
   "parent_id":"1"
  },
  {
-  "id":"43",
+  "id":"52",
   "name":"3",
   "parent_id":"1"
  },
  {
-  "id":"44",
-  "name":"3",
+  "id":"53",
+  "name":"4",
   "parent_id":"1"
  }
 ]
+ 
