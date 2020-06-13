@@ -21,7 +21,7 @@
  }, 
  {
   "id":"5",
-  "name":"B.E",
+  "name":"B.B.A",
   "parent_id":"0"
  }, 
  {
@@ -41,7 +41,7 @@
  },
  {
   "id":"9",
-  "name":"Biomedical Engineering",
+  "name":"Biomedical Engg.",
   "parent_id":"0"
  }, 
  {
@@ -107,7 +107,7 @@
  },
  {
   "id":"22",
-  "name":"Computer Science Engineering",
+  "name":"Computer Science Engg.",
   "parent_id":"0"
  }, 
  {
@@ -329,6 +329,126 @@
   "id":"66",
   "name":"Sem-10",
   "parent_id":"2"
- }
+ },
+ {
+  "id":"67",
+  "name":"Sem-1",
+  "parent_id":"3"
+ },
+{
+  "id":"68",
+  "name":"Sem-2",
+  "parent_id":"3"
+ },
+ {
+  "id":"69",
+  "name":"Sem-3",
+  "parent_id":"3"
+ },
+ {
+  "id":"70",
+  "name":"Sem-4",
+  "parent_id":"3"
+ },
+{
+  "id":"71",
+  "name":"Sem-5",
+  "parent_id":"3"
+ },
+ {
+  "id":"72",
+  "name":"Sem-6",
+  "parent_id":"3"
+ },
+{
+  "id":"73",
+  "name":"Sem-1",
+  "parent_id":"4"
+ },
+{
+  "id":"74",
+  "name":"Sem-2",
+  "parent_id":"4"
+ },
+ {
+  "id":"75",
+  "name":"Sem-3",
+  "parent_id":"4"
+ },
+ {
+  "id":"76",
+  "name":"Sem-4",
+  "parent_id":"4"
+ },
+{
+  "id":"77",
+  "name":"Part-1",
+  "parent_id":"4"
+ },
+ {
+  "id":"78",
+  "name":"Part-2",
+  "parent_id":"4"
+ },
+ {
+  "id":"79",
+  "name":"Part-3",
+  "parent_id":"4"
+ },
+{
+  "id":"80",
+  "name":"Sem-1",
+  "parent_id":"5"
+ },
+{
+  "id":"81",
+  "name":"Sem-2",
+  "parent_id":"5"
+ },
+ {
+  "id":"82",
+  "name":"Sem-3",
+  "parent_id":"5"
+ },
+ {
+  "id":"83",
+  "name":"Sem-4",
+  "parent_id":"5"
+ },
+{
+  "id":"84",
+  "name":"Part-1",
+  "parent_id":"5"
+ },
+ {
+  "id":"85",
+  "name":"Part-2",
+  "parent_id":"5"
+ },
+ {
+  "id":"86",
+  "name":"Part-3",
+  "parent_id":"5"
+ },
+{
+  "id":"87",
+  "name":"Sem-1",
+  "parent_id":"6"
+ },
+{
+  "id":"88",
+  "name":"Sem-2",
+  "parent_id":"6"
+ },
+ {
+  "id":"89",
+  "name":"Sem-3",
+  "parent_id":"6"
+ },
+ {
+  "id":"90",
+  "name":"Sem-4",
+  "parent_id":"6"
+ } 
 ]
  
