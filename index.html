@@ -21,9 +21,10 @@
 	   <select name="subject" id="subject" class="form-control input-lg">
 	    <option value="">Select Subject</option>
 	   </select><br><br>
-	    <button id="searchQuestionPapers">Search</button><br><br>
+	    <a href="" onclick="getLink()" id="qPLinks">Search</a><br><br>
 	   <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fronakee.github.io%2Fstudymate.com%2F" alt="Hits">
 	  </div>
+
 	 </body>
 	</html>
 
@@ -37,7 +38,7 @@
 	  var html_code = '';
 	  $.getJSON('country_state_city.json', function(data){
 
-	   html_code += '<option value="">Select '+id+'</option>';
+	   html_code += '<option value=""> Select '+id+'</option>';
 	   $.each(data, function(key, value){
 	    if(id == 'course')
 	    {
@@ -63,7 +64,7 @@
 	  var course_id = $(this).val();
 	  if(course_id != '')
 	  {
-	   load_json_data('semester', course_id);
+	   load_json_data('Semester', course_id);
 	  }
 	  else
 	  {
@@ -75,23 +76,27 @@
 	  var semester_id = $(this).val();
 	  if(semester_id != '')
 	  {
-	   load_json_data('subject', semester_id);
+	   load_json_data('Subject', semester_id);
 	  }
 	  else
 	  {
 	   $('#subject').html('<option value="">Select Subject</option>');
 	  }
 	 });
-	 $(document).on('change', '#subject', function(){
-	  var subject_id = $(this).val();
-	  if(subject_id != '')
-	  {
-	   load_json_data('searchQuestionPapers', subject_id);
-	  }
-	  else
-	  {
-	   $('#subject').html('<option value="">Select Subject</option>');
-	  }
-	 });
+	 
+	 
+
+	    function getLink(id, parent_id) {
+	    	 $(document).on('change', '#subject', function(){
+	    	 	var sub_id = $(this).val();
+	    	 	var buttonLink = '';
+	    	 	 $.getJSON('country_state_city.json', function(data){
+	    	 	  $.each(data, function(key, value){
+	    	 	  	buttonLink += '<a href="'+value.name+'"></a>'
+	    	 	  });
+	    	    });
+	    	 });
+	    	
+	    }
 	});
 	</script>
