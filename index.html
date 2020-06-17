@@ -1,86 +1,97 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <title>Studymate | Question Papers</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- </head>
- <body>
-  <br /><br />
-  <div class="container" style="width:600px;">
-   <h2 align="center">Question Papers</h2><br /><br />
-   <select name="course" id="course" class="form-control input-lg">
-    <option value="">Select Course</option>
-   </select>
-   <br />
-   <select name="semester" id="semester" class="form-control input-lg">
-    <option value="">Select Sem</option>
-   </select>
-   <br />
-   <select name="subject" id="subject" class="form-control input-lg">
-    <option value="">Select Subject</option>
-   </select>
-    <button id="searchQuestionPapers">Search</button>
-   <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fronakee.github.io%2Fstudymate.com%2F" alt="Hits">
-  </div>
- </body>
-</html>
+	<!DOCTYPE html>
+	<html>
+	 <head>
+	  <title>Studymate | Question Papers</title>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 </head>
+	 <body>
+	  <br /><br />
+	  <div class="container" style="width:600px;">
+	   <h2 align="center">Question Papers</h2><br /><br />
+	   <select name="course" id="course" class="form-control input-lg">
+	    <option value="">Select Course</option>
+	   </select>
+	   <br />
+	   <select name="semester" id="semester" class="form-control input-lg">
+	    <option value="">Select Sem</option>
+	   </select>
+	   <br />
+	   <select name="subject" id="subject" class="form-control input-lg">
+	    <option value="">Select Subject</option>
+	   </select><br><br>
+	    <button id="searchQuestionPapers">Search</button><br><br>
+	   <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fronakee.github.io%2Fstudymate.com%2F" alt="Hits">
+	  </div>
+	 </body>
+	</html>
 
-<script>
-$(document).ready(function(){
+	<script>
+	$(document).ready(function(){
 
- load_json_data('course');
+	 load_json_data('course');
 
- function load_json_data(id, parent_id)
- {
-  var html_code = '';
-  $.getJSON('country_state_city.json', function(data){
+	 function load_json_data(id, parent_id)
+	 {
+	  var html_code = '';
+	  $.getJSON('country_state_city.json', function(data){
 
-   html_code += '<option value="">Select '+id+'</option>';
-   $.each(data, function(key, value){
-    if(id == 'course')
-    {
-     if(value.parent_id == '0')
-     {
-      html_code += '<option value="'+value.id+'">'+value.name+'</option>';
-     }
-    }
-    else
-    {
-     if(value.parent_id == parent_id)
-     {
-      html_code += '<option value="'+value.id+'">'+value.name+'</option>';
-     }
-    }
-   });
-   $('#'+id).html(html_code);
-  });
+	   html_code += '<option value="">Select '+id+'</option>';
+	   $.each(data, function(key, value){
+	    if(id == 'course')
+	    {
+	     if(value.parent_id == '0')
+	     {
+	      html_code += '<option value="'+value.id+'">'+value.name+'</option>';
+	     }
+	    }
+	    else
+	    {
+	     if(value.parent_id == parent_id)
+	     {
+	      html_code += '<option value="'+value.id+'">'+value.name+'</option>';
+	     }
+	    }
+	   });
+	   $('#'+id).html(html_code);
+	  });
 
- }
+	 }
 
- $(document).on('change', '#course', function(){
-  var course_id = $(this).val();
-  if(course_id != '')
-  {
-   load_json_data('semester', course_id);
-  }
-  else
-  {
-   $('#semester').html('<option value="">Select Semester</option>');
-   $('#subject').html('<option value="">Select Subject</option>');
-  }
- });
- $(document).on('change', '#semester', function(){
-  var semester_id = $(this).val();
-  if(semester_id != '')
-  {
-   load_json_data('subject', semester_id);
-  }
-  else
-  {
-   $('#subject').html('<option value="">Select Subject</option>');
-  }
- });
-});
-</script>
+	 $(document).on('change', '#course', function(){
+	  var course_id = $(this).val();
+	  if(course_id != '')
+	  {
+	   load_json_data('semester', course_id);
+	  }
+	  else
+	  {
+	   $('#semester').html('<option value="">Select Semester</option>');
+	   $('#subject').html('<option value="">Select Subject</option>');
+	  }
+	 });
+	 $(document).on('change', '#semester', function(){
+	  var semester_id = $(this).val();
+	  if(semester_id != '')
+	  {
+	   load_json_data('subject', semester_id);
+	  }
+	  else
+	  {
+	   $('#subject').html('<option value="">Select Subject</option>');
+	  }
+	 });
+	 $(document).on('change', '#subject', function(){
+	  var subject_id = $(this).val();
+	  if(subject_id != '')
+	  {
+	   load_json_data('searchQuestionPapers', subject_id);
+	  }
+	  else
+	  {
+	   $('#subject').html('<option value="">Select Subject</option>');
+	  }
+	 });
+	});
+	</script>
