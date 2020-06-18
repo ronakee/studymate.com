@@ -88,7 +88,7 @@
 	   $.each(data, function(key, value){
 	  var subject_id = $(this).val();
 	  var newUrl = '';
-	  if(value.subject_id == parent_id)
+	  if(value.subject_id == subject_id)
 	  {
 	    newUrl = value.name;
 	    $('#qPLinks').attr("href", newUrl);
