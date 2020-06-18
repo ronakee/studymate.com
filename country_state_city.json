@@ -248,7 +248,8 @@
 {
   "id":"50",
   "name":"Sem-1",
-  "parent_id":"1"
+  "parent_id":"1",
+  "parent_id":"8"
  },
 {
   "id":"51",
