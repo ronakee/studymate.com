@@ -87,22 +87,5 @@
 	 
 
 	   
-	    	 $(document).on('change', '#Subject', function(){
-	    	 	var sub_id = $(this).val();
-	    	 	var buttonLink = '';
-	    	 	 $.getJSON('country_state_city.json', function(data){
-	    	 	  $.each(data, function(key, value){
-	    	 	   var li = value.name;
-	    	 	   if (id == 'Subject') {
-	    	 	   	if(value.parent_id == '0')
-	    	 	   	{
-	    	 	   	 document.getElementById('qPLinks').href = li;
-	    	 	   	};
-	    	 	   };
-	    	 	 
-	    	    });
-	    	 });
-	    	
-	    }
-	});
+	    	});
 	</script>
