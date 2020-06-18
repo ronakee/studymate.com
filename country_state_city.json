@@ -247,7 +247,8 @@
  },
 {
   "id":"50",
-  "name":"Sem-1"
+  "name":"Sem-1",
+  "parent_id":"1"
  },
 {
   "id":"51",
@@ -457,7 +458,7 @@
 {
   "id":"92",
   "name":"www.google.com",
-  "parent_id":"91"
+  "parent_id":"50"
  }
 ]
  
