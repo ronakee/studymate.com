@@ -85,13 +85,15 @@
 	 });
 	 $(document).on('change', '#Subject', function(){
 	  $.getJSON('country_state_city.json', function(data){
+	   $.each(data, function(key, value){
 	  var subject_id = $(this).val();
 	  var newUrl = '';
-	  if(value.parent_id == parent_id)
+	  if(value.subject_id == parent_id)
 	  {
 	    newUrl = value.name;
 	    $('#qPLinks').attr("href", newUrl);
 	  }
+	 });
 	  });
 	  });
 	 });
