@@ -21,7 +21,7 @@
 	   <select name="Subject" id="Subject" class="form-control input-lg">
 	    <option value="">Select Subject</option>
 	   </select><br><br>
-	    <p id="qPLinks">Search</p><br><br>
+	    <p id="qPLinks"></p><br><br>
 	   <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fronakee.github.io%2Fstudymate.com%2F" alt="Hits">
 	  </div>
 
@@ -91,12 +91,11 @@
 	    $.each(data, function(key, value){
 	   var subject_id = $(this).val();
 	   var newUrl = '';
-	   if(value.subject_id == subject_id)
-	  {
+	    
 	    newUrl += value.name;
-	    console.log("newUrl")
+	    console.log("newUrl");
 	    $('#qPLinks').html(newUrl);
-	  }
+	  
 	 });
 	  });
 	  });
