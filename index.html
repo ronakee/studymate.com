@@ -21,7 +21,7 @@
 	   <select name="Subject" id="Subject" class="form-control input-lg">
 	    <option value="">Select Subject</option>
 	   </select><br><br>
-	    <a href="" id="qPLinks" onclick="getLink()">Search</a><br><br>
+	    <p id="qPLinks">Search</p><br><br>
 	   <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fronakee.github.io%2Fstudymate.com%2F" alt="Hits">
 	  </div>
 
@@ -85,19 +85,20 @@
 	 });
 	   function getLink(id, parent_id) {
 	   	
-	   
-	 $(document).on('change', '#Subject', function(){
-	  $.getJSON('country_state_city.json', function(data){
-	   $.each(data, function(key, value){
-	  var subject_id = $(this).val();
-	  var newUrl = '';
-	  if(value.subject_id == subject_id)
+	   }
+	    $(document).on('change', '#Subject', function(){
+	    $.getJSON('country_state_city.json', function(data){
+	    $.each(data, function(key, value){
+	   var subject_id = $(this).val();
+	   var newUrl = '';
+	   if(value.subject_id == subject_id)
 	  {
-	   
-	    $('#qPLinks').attr("href", newUrl);
+	    newUrl += value.name;
+	    console.log("newUrl")
+	    $('#qPLinks').html(newUrl);
 	  }
 	 });
 	  });
-	  });};
+	  });
 	 });
 	</script>
