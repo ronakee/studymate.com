@@ -1,52 +1,662 @@
 [
 {
-	"id":"1",
-	"name":"U.G",
-	"parent_id":"0"
-},
-{
-	"id":"2",
-	"name":"P.G",
-	"parent_id":"0"
-},
+  "id":"1",
+  "name":"U.G",
+  "parent_id":"1"
+ },
+ {
+  "id":"2",
+  "name":"P.G",
+  "parent_id":"0"
+ }, 
 {
   "id":"3",
-  "name":"B.A",
-  "parent_id":"1"
+  "name":"Diploma(U.G)",
+  "parent_id":"0"
  }, 
  {
   "id":"4",
-  "name":"B.Arch",
-  "parent_id":"2"
+  "name":"Diploma(P.G)",
+  "parent_id":"0"
  },
  {
   "id":"5",
   "name":"B.A",
-  "parent_id":"3"
+  "parent_id":"1"
  }, 
  {
   "id":"6",
   "name":"B.Arch",
-  "parent_id":"4"
- },
-{
+  "parent_id":"1"
+ }, 
+ {
   "id":"7",
-  "name":"google.com",
-  "parent_id":"5"
+  "name":"B.B.A",
+  "parent_id":"1"
  }, 
  {
   "id":"8",
-  "name":"goole.com",
-  "parent_id":"6"
- },
-{
+  "name":"B.C.A",
+  "parent_id":"1"
+ }, 
+ {
   "id":"9",
-  "name":"google.com",
-  "parent_id":"7"
+  "name":"B.Com",
+  "parent_id":"1"
  }, 
  {
   "id":"10",
-  "name":"goole.com",
+  "name":"B.Ed",
+  "parent_id":"1"
+ }, 
+ {
+  "id":"11",
+  "name":"B.F.D",
+  "parent_id":"1"
+ }, 
+ {
+  "id":"12",
+  "name":"B.J.M.C",
+  "parent_id":"1"
+ },
+ {
+  "id":"13",
+  "name":"Biomedical Engg.",
+  "parent_id":"1"
+ },
+{
+  "id":"14",
+  "name":"Biomedical-Electronics",
+  "parent_id":"4"
+ },  
+ {
+  "id":"15",
+  "name":"B.Lib",
+  "parent_id":"1"
+ }, 
+ {
+  "id":"16",
+  "name":"B.P.A",
+  "parent_id":"1"
+ }, 
+ {
+  "id":"17",
+  "name":"B.P.E",
+  "parent_id":"1"
+ }, 
+ {
+  "id":"18",
+  "name":"B.P.Ed",
+  "parent_id":"1"
+ }, 
+ {
+  "id":"19",
+  "name":"B.Pharm",
+  "parent_id":"1"
+ }, 
+ {
+  "id":"20",
+  "name":"B.Sc",
+  "parent_id":"1"
+ }, 
+ {
+  "id":"21",
+  "name":"B.S.W",
+  "parent_id":"1"
+ }, 
+ {
+  "id":"22",
+  "name":"B.Tech(Cosmetic)",
+  "parent_id":"1"
+ },
+{
+  "id":"23",
+  "name":"B.Tech(Chemical)",
+  "parent_id":"1"
+ },  
+ {
+  "id":"24",
+  "name":"B.Text",
+  "parent_id":"1"
+ },
+ {
+  "id":"25",
+  "name":"Business Management",
+  "parent_id":"3"
+ },
+ {
+  "id":"26",
+  "name":"B.Voc",
+  "parent_id":"1"
+ },
+{
+  "id":"27",
+  "name":"Civil Construction Engineering-n-Management Engineering",
+  "parent_id":"2"
+ }, 
+{
+  "id":"28",
+  "name":"Civil Environmental Engineering",
+  "parent_id":"2"
+ },
+{
+  "id":"29",
+  "name":"Civil-Geotechnical-Engineering",
+  "parent_id":"2"
+ },
+ {
+  "id":"30",
+  "name":"Civil Engineering",
+  "parent_id":"1"
+ },
+ {
+  "id":"31",
+  "name":"Civil-Structural-Engineering",
+  "parent_id":"2"
+ },
+ {
+  "id":"32",
+  "name":"Civil-Transportation-Engineering-n-Management-Engineering",
+  "parent_id":"2"
+ },
+ {
+  "id":"33",
+  "name":"Communication Skills",
+  "parent_id":"4"
+ },
+ {
+  "id":"34",
+  "name":"Computer Engg.",
+  "parent_id":"1"
+ },
+ {
+  "id":"35",
+  "name":"Computer Science Engg.",
+  "parent_id":"1"
+ },
+{
+  "id":"36",
+  "name":"Computer Engg.",
+  "parent_id":"2"
+ },
+ {
+  "id":"37",
+  "name":"Computer Science Engg.",
+  "parent_id":"2"
+ }, 
+ {
+  "id":"38",
+  "name":"Computer-Science-n-Information-Technology",
+  "parent_id":"2"
+ },  
+{
+  "id":"39",
+  "name":"Counselling-n-Psychotherapy",
+  "parent_id":"4"
+ },
+{
+  "id":"40",
+  "name":"Cyber Law",
+  "parent_id":"4"
+ },   
+ {
+  "id":"41",
+  "name":"Digital Electronics",
+  "parent_id":"2"
+ },
+ {
+  "id":"42",
+  "name":"D.Pharm",
+  "parent_id":"1"
+ },
+ {
+  "id":"43",
+  "name":"Electrical/Electroincs-n-Power",
+  "parent_id":"1"
+ },
+ {
+  "id":"44",
+  "name":"Electrical-n-Electronics Engg.",
+  "parent_id":"1"
+ },
+{
+  "id":"45",
+  "name":"Electronics Engg.",
+  "parent_id":"1"
+ },
+{
+  "id":"46",
+  "name":"Electronics/Telecommunication Enng.",
+  "parent_id":"1"
+ },
+{
+  "id":"47",
+  "name":"Electrical-Electrical-Power-System-Engineering",
+  "parent_id":"2"
+ },
+{
+  "id":"48",
+  "name":"Electrical-Electronics-n-Power-Engineering",
+  "parent_id":"2"
+ },
+{
+  "id":"50",
+  "name":"Electrical-n-Electronics",
+  "parent_id":"2"
+ },
+{
+  "id":"51",
+  "name":"Electronics-n-Telecommunication",
+  "parent_id":"2"
+ },  
+ {
+  "id":"52",
+  "name":"Financial Management",
+  "parent_id":"3"
+ },
+{
+  "id":"53",
+  "name":"Human Rights-n- Duties Education",
+  "parent_id":"4"
+ }, 
+{
+  "id":"54",
+  "name":"Information Technology Engg",
+  "parent_id":"1"
+ },
+{
+  "id":"55",
+  "name":"Information Technology Engg",
+  "parent_id":"2"
+ }, 
+{
+  "id":"56",
+  "name":"Instrumentation Engg.",
+  "parent_id":"1"
+ },
+{
+  "id":"57",
+  "name":"Labour Law",
+  "parent_id":"4"
+ },
+{
+  "id":"58",
+  "name":"L.L.B/3 year",
+  "parent_id":"1"
+ }, 
+ {
+  "id":"59",
+  "name":"L.L.B/5 year",
+  "parent_id":"1"
+ }, 
+ {
+  "id":"60",
+  "name":"L.L.M",
+  "parent_id":"1"
+ },
+{
+  "id":"61",
+  "name":"Law Taxation",
+  "parent_id":"4"
+ },  
+ {
+  "id":"62",
+  "name":"M.A",
+  "parent_id":"2"
+ },
+{
+  "id":"63",
+  "name":"Marketing Management",
+  "parent_id":"4"
+ },  
+ {
+  "id":"64",
+  "name":"M.B.A",
+  "parent_id":"2"
+ }, 
+ {
+  "id":"65",
+  "name":"M.C.A",
+  "parent_id":"2"
+ }, 
+ {
+  "id":"66",
+  "name":"M.Com",
+  "parent_id":"2"
+ },
+ {
+  "id":"67",
+  "name":"Mechanical Engg.",
+  "parent_id":"2"
+ },
+{
+  "id":"68",
+  "name":"Mechanical-Adv-Manu-n-Mech-Sys-Design-Engineering",
+  "parent_id":"2"
+ },
+ {
+  "id":"69",
+  "name":"Mechanical-CAD-CAM-Engineering",
+  "parent_id":"2"
+ },
+ {
+  "id":"70",
+  "name":"Mechanical-Thermal-Engg-Engineering",
+  "parent_id":"2"
+ }, 
+ {
+  "id":"71",
+  "name":"M.H.R.D",
+  "parent_id":"2"
+ },
+ {
+  "id":"72",
+  "name":"M.Lib",
+  "parent_id":"2"
+ },
+ {
+  "id":"73",
+  "name":"M.P.Ed",
+  "parent_id":"2"
+ },
+ {
+  "id":"74",
+  "name":"M.Pharm",
+  "parent_id":"2"
+ },
+ {
+  "id":"75",
+  "name":"M.Phil",
+  "parent_id":"2"
+ },
+ {
+  "id":"76",
+  "name":"M.S.C",
+  "parent_id":"2"
+ },
+ {
+  "id":"77",
+  "name":"M.Tech",
+  "parent_id":"2"
+ },
+ {
+  "id":"78",
+  "name":"Production Engg.",
+  "parent_id":"1"
+ },
+{
+  "id":"79",
+  "name":"Production-Technology-n-Management",
+  "parent_id":"2"
+ }, 
+ {
+  "id":"80",
+  "name":"Taxation",
+  "parent_id":"3"
+ },
+{
+  "id":"81",
+  "name":"Taxation",
+  "parent_id":"4"
+ }, 
+{
+  "id":"82",
+  "name":"Yoga Education)",
+  "parent_id":"3"
+ },
+{
+  "id":"83",
+  "name":"Watershed Technology-n- Management",
+  "parent_id":"4"
+ },
+{
+  "id":"84",
+  "name":"Yoga Therapy)",
+  "parent_id":"3"
+ },
+{
+  "id":"85",
+  "name":"Sem-1",
+  "parent_id":"5"
+ },
+{
+  "id":"86",
+  "name":"Sem-2",
+  "parent_id":"5"
+ },
+ {
+  "id":"87",
+  "name":"Sem-3",
+  "parent_id":"5"
+ },
+ {
+  "id":"88",
+  "name":"Sem-4",
+  "parent_id":"5"
+ },
+{
+  "id":"89",
+  "name":"Part-1",
+  "parent_id":"5"
+ },
+ {
+  "id":"90",
+  "name":"Part-2",
+  "parent_id":"5"
+ },
+ {
+  "id":"91",
+  "name":"Part-3",
+  "parent_id":"5"
+ },
+ {
+  "id":"92",
+  "name":"Sem-1",
+  "parent_id":"6"
+ },
+{
+  "id":"93",
+  "name":"Sem-2",
+  "parent_id":"6"
+ },
+ {
+  "id":"94",
+  "name":"Sem-3",
+  "parent_id":"6"
+ },
+ {
+  "id":"95",
+  "name":"Sem-4",
+  "parent_id":"6"
+ },
+ {
+  "id":"96",
+  "name":"Sem-5",
+  "parent_id":"6"
+ }, 
+ {
+  "id":"97",
+  "name":"Sem-6",
+  "parent_id":"6"
+ },
+ {
+  "id":"98",
+  "name":"Sem-7",
+  "parent_id":"6"
+ },
+ {
+  "id":"99",
+  "name":"Sem-8",
+  "parent_id":"6"
+ },
+ {
+  "id":"100",
+  "name":"Sem-9",
+  "parent_id":"6"
+ },
+ {
+  "id":"101",
+  "name":"Sem-10",
+  "parent_id":"6"
+ },
+ {
+  "id":"102",
+  "name":"Sem-1",
+  "parent_id":"7"
+ },
+{
+  "id":"103",
+  "name":"Sem-2",
+  "parent_id":"7"
+ },
+ {
+  "id":"104",
+  "name":"Sem-3",
+  "parent_id":"7"
+ },
+ {
+  "id":"105",
+  "name":"Sem-4",
+  "parent_id":"7"
+ },
+{
+  "id":"106",
+  "name":"Part-1",
+  "parent_id":"7"
+ },
+ {
+  "id":"107",
+  "name":"Part-2",
+  "parent_id":"7"
+ },
+{
+  "id":"108",
+  "name":"Part-3",
+  "parent_id":"7"
+ },
+{
+  "id":"109",
+  "name":"Sem-1",
   "parent_id":"8"
- }  
+ },
+ {
+  "id":"110",
+  "name":"Sem-2",
+  "parent_id":"8"
+ },
+ {
+  "id":"111",
+  "name":"Sem-3",
+  "parent_id":"8"
+ },
+{
+  "id":"112",
+  "name":"Sem-4",
+  "parent_id":"8"
+ },
+ {
+  "id":"113",
+  "name":"Sem-5",
+  "parent_id":"8"
+ },
+ {
+  "id":"114",
+  "name":"Sem-6",
+  "parent_id":"8"
+ },
+{
+  "id":"115",
+  "name":"Sem-1",
+  "parent_id":"9"
+ },
+{
+  "id":"116",
+  "name":"Sem-2",
+  "parent_id":"9"
+ },
+ {
+  "id":"117",
+  "name":"Sem-3",
+  "parent_id":"9"
+ },
+ {
+  "id":"118",
+  "name":"Sem-4",
+  "parent_id":"9"
+ },
+{
+  "id":"119",
+  "name":"Part-1",
+  "parent_id":"9"
+ },
+ {
+  "id":"120",
+  "name":"Part-2",
+  "parent_id":"9"
+ },
+ {
+  "id":"121",
+  "name":"Part-3",
+  "parent_id":"9"
+ },
+{
+  "id":"122",
+  "name":"Sem-1",
+  "parent_id":"10"
+ },
+{
+  "id":"123",
+  "name":"Sem-2",
+  "parent_id":"10"
+ },
+ {
+  "id":"124",
+  "name":"Sem-3",
+  "parent_id":"10"
+ },
+ {
+  "id":"125",
+  "name":"Sem-4",
+  "parent_id":"10"
+ },
+{
+  "id":"126",
+  "name":"Sem-1",
+  "parent_id":"11"
+ },
+{
+  "id":"127",
+  "name":"Sem-2",
+  "parent_id":"11"
+ },
+ {
+  "id":"128",
+  "name":"Sem-3",
+  "parent_id":"11"
+ },
+ {
+  "id":"129",
+  "name":"Sem-4",
+  "parent_id":"11"
+ },
+ {
+  "id":"130",
+  "name":"Sem-5",
+  "parent_id":"11"
+ },
+ {
+  "id":"131",
+  "name":"Sem-6",
+  "parent_id":"11"
+ },
+ {
+  "id":"132",
+  "name":"Sem-1",
+  "parent_id":"11"
+ },
+ {
+  "id":"133",
+  "name":"Sem-2",
+  "parent_id":"11"
+ }
 ]
