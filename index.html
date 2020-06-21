@@ -110,7 +110,7 @@
 	  var html_code = '';
 	  $.getJSON('country_state_city.json', function(data){
 	   $.each(data, function(key, value){
-	    if(id == 'Course')
+	    if(id == 'Coursetype')
 	    {
 	     if(value.parent_id == '0')
 	     {
@@ -130,10 +130,10 @@
 
 	 }
 	 $(document).on('change', '#Subject', function(){
-	  var semester_id = $(this).val();
-	  if(semester_id != '')
+	  var subject_id = $(this).val();
+	  if(subject_id != '')
 	  {
-      load_json_link('Link', semester_id);
+      load_json_link('Link', subject_id);
 	  }
 	  
 	 });           	
