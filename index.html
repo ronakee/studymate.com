@@ -83,20 +83,16 @@
 	   $('#Subject').html('<option value="">Select Subject</option>');
 	  }
 	 });
-	  	 $(document).on('change', '#Subject', function(){
-	  	   var semester_id = $(this).val();
-	  if(semester_id != '')
-	  {
-      				 function load_json_dat(id, parent_id)
-	          {
+	      function load_json_link(id, parent_id)
+	 {
 	  var html_code = '';
 	  $.getJSON('country_state_city.json', function(data){
 	   $.each(data, function(key, value){
-	    if(id == 'Subject')
+	    if(id == 'Course')
 	    {
 	     if(value.parent_id == '0')
 	     {
-	      html_code += '<option value="'+value.id+'">'+value.name+'</option>';
+	      html_code += '<a href="'+value.name+'">Search</a>';
 	     }
 	    }
 	    else
@@ -107,15 +103,19 @@
 	     }
 	    }
 	   });
-	   });
+	   $('#'+id).html(html_code);
+	  });
 
 	 }
-
-
-
-      }
-	    });
-	       });
-
+	 $(document).on('change', '#Subject', function(){
+	  var semester_id = $(this).val();
+	  if(semester_id != '')
+	  {
+      load_json_link('Link', semester_id);
+	  }
+	
+	 });           	
+      });
+	    
 	      
 	</script>
