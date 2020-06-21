@@ -1,7 +1,7 @@
 	<!DOCTYPE html>
 	<html>
 	 <head>
-	  <title>Studymate |Question Papers</title>
+	  <title>Studymate | Question Papers</title>
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -21,7 +21,7 @@
 	   <select name="Subject" id="Subject" class="form-control input-lg">
 	    <option value="">Select Subject</option>
 	   </select><br><br>
-	    <p id="qPLinks"></p><br><br>
+	    <a hef="" id="qPLinks">Search</a><br><br>
 	   <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fronakee.github.io%2Fstudymate.com%2F" alt="Hits">
 	  </div>
 
@@ -76,6 +76,8 @@
 	  var semester_id = $(this).val();
 	  if(semester_id != '')
 	  {
+
+
 	   load_json_data('Subject', semester_id);
 	  }
 	  else
@@ -87,17 +89,24 @@
 	   	
 	   }
 	    $(document).on('change', '#Subject', function(){
-	    $.getJSON('country_state_city.json', function(data){
-	    $.each(data, function(key, value){
-	   var subject_id = $(this).val();
-	   var newUrl = '';
-	    
-	    newUrl += value.name;
-	    console.log(newUrl);
-	    $('#qPLinks').html(newUrl);
-	  
-	 });
+	      function load_json_dat(id, parent_id)
+	      {
+	       var html_code = '';
+	       $.getJSON('country_state_city.json', function(data){
+
+	         $.each(data, function(key, value){
+	                      
+	          if(value.parent_id == parent_id)
+	          {
+	           html_code += '<a hef="value.name" >Search</a><br><br>';
+	          }
+	         
+	        });
+	        $('#'+id).html(html_code);
+	       });
+
+	      }
 	  });
 	  });
-	 });
+	
 	</script>
