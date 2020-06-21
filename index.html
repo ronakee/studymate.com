@@ -85,7 +85,7 @@
 	 });
 	  	 $(document).on('change', '#Subject', function(){
 	  	   var semester_id = $(this).val();
-	  if(semester_id = '')
+	  if(semester_id != '')
 	  {
       load_json_data('Link', semester_id);
 	  }
