@@ -84,36 +84,13 @@
 	  }
 	 });
 	  	 $(document).on('change', '#Subject', function(){
-	  	  var semester_id = $(this).val();
-	  	  if(semester_id != '')
-	  	  {
-	                function load_json_dat(id, parent_id)
-	 {
-	   $.getJSON('country_state_city.json', function(data){
-	   $.each(data, function(key, value){
-	    if(id == 'Subject')
-	    {
-	     if(value.parent_id == '0')
-	     {
-	       $('#Link').html('<a href="'+value.id+'"></a>');
-	     }
-	    }
-	    else
-	    {
-	     if(value.parent_id == parent_id)
-	     {
-	      $('#Link').html('<a href="'+value.id+'"></a>');
-	     }
-	    }
-	   });
-	   $('#'+id).html(html_code);
-	  });
-
-	 } 
-	  	  }
-	  	  
-	  	 });
-	    
+	  	   var semester_id = $(this).val();
+	  if(semester_id = '')
+	  {
+      load_json_data('Link', semester_id);
+	  }
+	  
+	    });
 	       });
 
 	      
