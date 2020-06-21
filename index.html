@@ -21,7 +21,7 @@
 	   <select name="Subject" id="Subject" class="form-control input-lg">
 	    <option value="">Select Subject</option>
 	   </select><br><br>
-	    <a hef="" id="qPLinks">Search</a><br><br>
+	   <p id="Link"></p><br><br>
 	   <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fronakee.github.io%2Fstudymate.com%2F" alt="Hits">
 	  </div>
 
@@ -76,16 +76,43 @@
 	  var semester_id = $(this).val();
 	  if(semester_id != '')
 	  {
-
-
-	   load_json_data('Subject', semester_id);
+      load_json_data('Subject', semester_id);
 	  }
 	  else
 	  {
 	   $('#Subject').html('<option value="">Select Subject</option>');
 	  }
 	 });
-	  
+	  	 $(document).on('change', '#Subject', function(){
+	  	  var semester_id = $(this).val();
+	  	  if(semester_id != '')
+	  	  {
+	                function load_json_dat(id, parent_id)
+	 {
+	   $.getJSON('country_state_city.json', function(data){
+	   $.each(data, function(key, value){
+	    if(id == 'Subject')
+	    {
+	     if(value.parent_id == '0')
+	     {
+	       $('#Link').html('<a href="'+value.id+'"></a>');
+	     }
+	    }
+	    else
+	    {
+	     if(value.parent_id == parent_id)
+	     {
+	      $('#Link').html('<a href="'+value.id+'"></a>');
+	     }
+	    }
+	   });
+	   $('#'+id).html(html_code);
+	  });
+
+	 } 
+	  	  }
+	  	  
+	  	 });
 	    
 	       });
 
