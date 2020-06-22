@@ -60,7 +60,7 @@
 		httpReq.open('GET','https://ronakee.github.io/studymate.com/coursetype.json',true);
 		httpReq.onload = function()
 		{
-			var Coursetype = JSON.parse(httpReq.resopnseText);
+			var Coursetype = JSON.parse(httpReq.responseText);
 			Coursetype.forEach(function(value)
 			{
 				var option = document.createELement('option');
