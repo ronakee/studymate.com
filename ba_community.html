@@ -26,15 +26,15 @@
 </body>
 </html>
 <script type="text/javascript">
-	$(document).ready(function(){
+	$.(document).ready(function(){
 		$.getJSON("ba_community.json", function(data){
 			var paper_data = '';
 			$.each(data, function(key, value){
 				paper_data += '<tr>';
-				paper_data += '<td'+value.Year+'</td';
-				paper_data += '<td'+value.Series+'</td';
-				paper_data += '<td'+value.Credits+'</td';
-				paper_data += '<td'+value.Download+'</td';
+				paper_data += '<td'+value.Year+'</td>';
+				paper_data += '<td'+value.Series+'</td>';
+				paper_data += '<td'+value.Credits+'</td>';
+				paper_data += '<td'+value.Download+'</td>';
 				paper_data += '</tr>';
 			});
 			$('#table').append(paper_data);
