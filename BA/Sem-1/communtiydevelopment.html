@@ -32,7 +32,7 @@
 				paper_data += '<tr>';
 				paper_data += '<td>'+value.Year+'</td>';
 				paper_data += '<td>'+value.Credits+'</td>';
-				paper_data += '<td><a href="" download>Download Paper</a></td>';
+			        paper_data += '<td><a href="'+value.Download+'" download>Download Paper</a></td>';
 				paper_data += '</tr>';
 			});
 			$('#table').append(paper_data);
