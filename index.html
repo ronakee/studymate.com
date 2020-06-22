@@ -32,7 +32,7 @@
 	   <p id="Link"></p><br><br>
 	   
   	<script type="text/javascript">
-  		var myObj =
+  	var myObj =
 {
    init:function () {
    	  var that = this;
@@ -60,18 +60,19 @@
 		httpReq.open('GET','https://ronakee.github.io/studymate.com/coursetype.json',true);
 		httpReq.onload = function()
 		{
-			var Coursetype = JSON.parse(httpReq.responseText);
+			var Coursetype = JSON.parse(httpReq.resopnseText);
 			Coursetype.forEach(function(value)
 			{
-				var option = document.createELement('option');
-				option.innertext = value.name;
-				option.setAttribute('value',value.id);
-				document.getElementById('Coursetype').appendChild(option);
+				var optio = document.createELement('option');
+				optio.innertext = value.name;
+				optio.setAttribute('value',value.id);
+				document.getElementById('Coursetype').appendChild(optio);
 			});
 		}
 		httpReq.send();    
    }
-} myObj.init();
+} 
+myObj.init();
   	</script>
 </body>
 </html>
