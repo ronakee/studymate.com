@@ -1,0 +1,22 @@
+[
+{
+  "id":"1",
+  "name":"U.G",
+  "parent_id":"0"
+ },
+ {
+  "id":"2",
+  "name":"P.G",
+  "parent_id":"0"
+ }, 
+{
+  "id":"3",
+  "name":"Diploma(U.G)",
+  "parent_id":"0"
+ }, 
+ {
+  "id":"4",
+  "name":"Diploma(P.G)",
+  "parent_id":"0"
+ }
+]
