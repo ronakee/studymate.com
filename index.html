@@ -1,13 +1,13 @@
-	<!DOCTYPE html>
-	<html>
-	 <head>
-	  <title>Studymate | Question Papers</title>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question Papers</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	 </head>
-	 <body>
-	  <br /><br />
+</head>
+<body>
+    	
+	 
 	  <div class="container" style="width:600px;">
 	    <h2 align="center">Question Papers</h2><br /><br />
 	    
@@ -28,117 +28,50 @@
 	  
 	   <select name="Subject" id="Subject" class="form-control input-lg">
 	    <option value="" selected hidden>Select Subject</option>
-	   </select>
-	   <br>
-	   <br>
-	   <br>
-	   <br>
-           <p id="Link"></p>
-	   <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fronakee.github.io%2Fstudymate.com%2F" alt="Hits">
-	  </div>
-
-	 </body>
-	</html>
-
-	<script>
-	$(document).ready(function(){
-
-	 load_json_data('Coursetype');
-     
-	 function load_json_data(id, parent_id)
-	 {
-	  var html_code = '';
-	  $.getJSON('country_state_city.json', function(data){
-      html_code += '<option value=""> Select '+id+'</option>';
-      $.each(data, function(key, value){
-	    if(id == 'Coursetype')
-	    {
-	     if(value.parent_id == '0')
-	     {
-	      html_code += '<option value="'+value.id+'">'+value.name+'</option>';
-	     }
-	    }
-	    else
-	    {
-	     if(value.parent_id == parent_id)
-	     {
-	      html_code += '<option value="'+value.id+'">'+value.name+'</option>';
-	     }
-	    }
-	   });
-	   $('#'+id).html(html_code);
-	  });
-
-	 }
- $(document).on('change', '#Coursetype', function(){
-	  var coursetype_id = $(this).val();
-	  if(coursetype_id != '')
-	  {
-	   load_json_data('Course', coursetype_id);
-	  }
-	  else
-	  {
-	   $('#Course').html('<option value="">Select Course</option>');
-	   $('#Semester').html('<option value="">Select Semester</option>');
-	   $('#Subject').html('<option value="">Select Subject</option>');
-	  }
-	 });
-	 $(document).on('change', '#Course', function(){
-	  var course_id = $(this).val();
-	  if(course_id != '')
-	  {
-	   load_json_data('Semester', course_id);
-	  }
-	  else
-	  {
-	   $('#Semester').html('<option value="">Select Semester</option>');
-	   $('#Subject').html('<option value="">Select Subject</option>');
-	  }
-	 });
-	 $(document).on('change', '#Semester', function(){
-	  var semester_id = $(this).val();
-	  if(semester_id != '')
-	  {
-      load_json_data('Subject', semester_id);
-	  }
-	  else
-	  {
-	   $('#Subject').html('<option value="">Select Subject</option>');
-	  }
-	 });
-	      function load_json_link(id, parent_id)
-	 {
-	  var html_code = '';
-	  $.getJSON('country_state_city.json', function(data){
-	   $.each(data, function(key, value){
-	    if(id == 'Coursetype')
-	    {
-	     if(value.parent_id == '0')
-	     {
-	      html_code += '<a href="'+value.name+'">Search</a>';
-	     }
-	    }
-	    else
-	    {
-	     if(value.parent_id == parent_id)
-	     {
-	      html_code += '<a href="'+value.name+'">Search</a>';
-	     }
-	    }
-	   });
-	   $('#'+id).html(html_code);
-	  });
-
-	 }
-	 $(document).on('change', '#Subject', function(){
-	  var subject_id = $(this).val();
-	  if(subject_id != '')
-	  {
-      load_json_link('Link', subject_id);
-	  }
-	  
-	 });           	
-      });
-	    
-	      
-	</script>
+	   </select><br><br>
+	   <p id="Link"></p><br><br>
+	   
+  	<script type="text/javascript">
+  		var myObj =
+{
+   init:function () {
+   	  var that = this;
+   	  this.load_coursetype();
+   	  document.getElementById('Coursetype').addEventListner('change',function()
+   	  {
+   	  	that.load_course(this.value);
+   	  });
+   	  document.getElementById('Course').addEventListner('change',function()
+   	  {
+   	  	that.load_course(this.value);
+   	  });
+   	  document.getElementById('Semester').addEventListner('change',function()
+   	  {
+   	  	that.load_course(this.value);
+   	  });
+   	  document.getElementById('Subject').addEventListner('change',function()
+   	  {
+   	  	that.load_course(this.value);
+   	  });
+   },
+   load_coursetype:function()
+   {
+		var httpReq = new XMLHttpRequest();
+		httpReq.open('GET','https://ronakee.github.io/studymate.com/coursetype.json',true);
+		httpReq.onload = function()
+		{
+			var Coursetype = JSON.parse(httpReq.resopnseText);
+			Coursetype.forEach(function(value)
+			{
+				var option = document.createELement('option');
+				option.innertext = value.name;
+				option.setAttribute('value',value.id);
+				document.getElementById('Coursetype').appendChild(option);
+			});
+		}
+		httpReq.send();    
+   }
+} 
+  	</script>
+</body>
+</html>
