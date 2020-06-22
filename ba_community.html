@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question Papers</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+     <div class="container">
+     	<div class="table-responsive">
+     		<h1>Showing Available Papers For Community</h1>
+     		<br>
+
+     		<table class="table" id="table">
+     			<tr>
+     				<th>Year</th>
+     				<th>Series</th>
+     				<th>Credits</th>
+     				<th><a href="" download>Download</a></th> 
+     			</tr>
+     			
+     		</table>
+     	</div>
+     </div>
+</body>
+</html>
+<script type="text/javascript">
+	$.(document).ready(function(){
+		$.getJSON("ba_community.json", function(data){
+			var paper_data = '';
+			$.each(data, function(key, value){
+				paper_data += '<tr>';
+				paper_data += '<td'+value.Year+'</td';
+				paper_data += '<td'+value.Series+'</td';
+				paper_data += '<td'+value.Credits+'</td';
+				paper_data += '<td'+value.Download+'</td';
+				paper_data += '</tr';
+			});
+			$('#table').append(paper_data);
+		});
+	});
+</script>
