@@ -652,11 +652,21 @@
  {
   "id":"132",
   "name":"Sem-1",
-  "parent_id":"11"
+  "parent_id":"12"
  },
  {
   "id":"133",
   "name":"Sem-2",
-  "parent_id":"11"
+  "parent_id":"12"
+ },
+{
+  "id":"134",
+  "name":"Compulsory English",
+  "parent_id":"89"
+ },
+{
+  "id":"135",
+  "name":"BA/Sem-1/communtiydevelopment",
+  "parent_id":"134"
  }
 ]
