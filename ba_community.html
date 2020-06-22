@@ -14,10 +14,9 @@
 
      		<table class="table" id="table">
      			<tr>
-     				<th>Year</th>
-     				<th>Series</th>
-     				<th>Credits</th>
-     				<th><a href="" download>Download</a></th> 
+     				<th>Year-Series</th>
+      				<th>Credits</th>
+     				<th>Download</th> 
      			</tr>
      			
      		</table>
@@ -32,9 +31,8 @@
 			$.each(data, function(key, value){
 				paper_data += '<tr>';
 				paper_data += '<td>'+value.Year+'</td>';
-				paper_data += '<td>'+value.Series+'</td>';
 				paper_data += '<td>'+value.Credits+'</td>';
-				paper_data += '<td>'+value.Download+'</td>';
+				paper_data += '<td><a href="'+value.Download+'"</a></td>';
 				paper_data += '</tr>';
 			});
 			$('#table').append(paper_data);
